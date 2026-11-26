@@ -8,7 +8,7 @@
 <body>
     <button class="action-btn">Click</button>
     <div class="product-card">67</div>
-    <a href="#">AAAAH</a>
+    <a href="https://youtu.be/dQw4w9WgXcQ">AAAAH</a>
     <div class="input-group">
     <label for="user">Username</label>
     <input id="user" type="text" />
@@ -16,6 +16,24 @@
     <input class="password-input" type="password" />
     <small class="hint-text">Must be at least 12 characters.</small>
     <input class="email-field" type="email"/>
+    <form onsubmit="return false;">
+        <input type="email" placeholder="Email (required)" required/>
+        <button type="submit">Submit</button>
+    </form>
+    <button disabled>Disabled Button</button>
+    <a href="#promo-banner">View</a>
+    <div id="promo-banner">
+        <p><strong>Holiday Sale - 30% off!</strong></p>
+        <div class="offer-area">
+            <button onclick="alert('Officer claimed')">Claim Offer</button>
+            <div class="watermark">SALE</div>
+        </div>
+    </div>
+    <a href="#q1">What is CSS :target?</a>
+    <p id="q1" class="faq-answer">It matches the element whose ID matches the URL fragment.</p>
+    <a href="#q2">Does it require Javascript?</a>
+    <p id="q2" class="faq-answer">No, the browser handles hash navigation natively</p>
+
     
 
 

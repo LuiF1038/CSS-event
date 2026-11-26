@@ -59,4 +59,54 @@ a:active { color: red; }
 .email-field:valid{border-color: #16a34a;}
 .email-field:invalid{border-color: #dc2626;}
 
+button{
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #94a3b8;
+}
+form:invalid button {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* 4.1 */
+#promo-banner {
+  display: none;
+  padding: 16px;
+  background-color: #fef3c7;
+}
+#promo-banner:target {
+  display: block;
+}
 
+.offer-area {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.watermark {
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  pointer-events: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dc2626;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-15deg);
+}
+.faq-answer {
+  max-height:0 ;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-answer:target{
+  max-height: 200px;
+}
